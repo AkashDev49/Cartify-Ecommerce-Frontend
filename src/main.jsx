@@ -8,7 +8,21 @@ import { UserProvider } from "./context/UserContext";
 import { ProductProvider } from "./context/ProductContext";
 import { CartProvider } from "./context/CartContext";
 
-export const server = "https://cartify-ecommerce-website-v9wx.onrender.com";
+createRoot(document.getElementById("root")).render(
+	<BrowserRouter>
+		<ThemeProvider>
+			<UserProvider>
+				<ProductProvider>
+					<CartProvider>
+						<App />
+					</CartProvider>
+				</ProductProvider>
+			</UserProvider>
+		</ThemeProvider>
+	</BrowserRouter>,
+);
+
+export const server = "http://localhost:5000";
 
 export const categories = [
 	"Electronics",
@@ -117,17 +131,3 @@ export const categories = [
 	"Camping Gear",
 	"Fishing Accessories",
 ];
-
-createRoot(document.getElementById("root")).render(
-	<BrowserRouter>
-		<ThemeProvider>
-			<UserProvider>
-				<ProductProvider>
-					<CartProvider>
-						<App />
-					</CartProvider>
-				</ProductProvider>
-			</UserProvider>
-		</ThemeProvider>
-	</BrowserRouter>,
-);

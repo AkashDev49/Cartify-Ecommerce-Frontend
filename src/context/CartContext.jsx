@@ -7,8 +7,6 @@ import toast from "react-hot-toast";
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-	const token = Cookies.get("token");
-	const [loading, setLoading] = useState(false);
 	const [totalItem, setTotalItem] = useState(0);
 	const [subTotal, setSubTotal] = useState(0);
 	const [cart, setCart] = useState([]);
@@ -36,7 +34,7 @@ export const CartProvider = ({ children }) => {
 				{ product },
 				{
 					headers: {
-						token,
+						token: Cookies.get("token"),
 					},
 				},
 			);
@@ -55,7 +53,7 @@ export const CartProvider = ({ children }) => {
 				{ id },
 				{
 					headers: {
-						token,
+						token: Cookies.get("token"),
 					},
 				},
 			);
@@ -70,7 +68,7 @@ export const CartProvider = ({ children }) => {
 		try {
 			const { data } = await axios.get(`${server}/api/cart/remove/${id}`, {
 				headers: {
-					token,
+					token: Cookies.get("token"),
 				},
 			});
 			toast.success(data.message);

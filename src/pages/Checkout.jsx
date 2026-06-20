@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
 	Dialog,
 	DialogContent,
+	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
@@ -138,6 +139,9 @@ function Checkout() {
 				<DialogContent>
 					<DialogHeader>
 						<DialogTitle>Add new address</DialogTitle>
+						<DialogDescription>
+							Enter your delivery address and phone number.
+						</DialogDescription>
 					</DialogHeader>
 
 					<div className="space-y-4">

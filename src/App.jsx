@@ -45,7 +45,7 @@ function App() {
 							element={isAuth ? <Order /> : <Login />}
 						></Route>
 						<Route
-							path="/order/:id"
+							path="/orders/:id"
 							element={isAuth ? <OrderPage /> : <Login />}
 						></Route>
 						<Route

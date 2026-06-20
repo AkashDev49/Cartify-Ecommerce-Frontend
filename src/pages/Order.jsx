@@ -90,7 +90,7 @@ function Order() {
 
 								<Button
 									className="mt-4"
-									onClick={() => navigate(`/order/${order._id}`)}
+									onClick={() => navigate(`/orders/${order._id}`)}
 								>
 									View Details
 								</Button>

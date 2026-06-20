@@ -17,7 +17,6 @@ function OrderProcessing() {
 
 	const queryParams = new URLSearchParams(location.search);
 	const sessionId = queryParams.get("session_id");
-	console.log("Sessoin id :", sessionId);
 
 	useEffect(() => {
 		const verifyPayment = async (req, res) => {

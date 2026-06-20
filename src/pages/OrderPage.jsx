@@ -1,6 +1,6 @@
 import { server } from "@/main";
 import axios from "axios";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Cookies from "js-cookie";
 import Loading from "@/components/Loading";

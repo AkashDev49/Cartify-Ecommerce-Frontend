@@ -60,14 +60,12 @@ function Payement() {
 				setLoading(false);
 				toast.success(data.message);
 				fetchCart();
-				navigate("/order");
+				navigate("/orders");
 			} catch (error) {
 				setLoading(false);
 				toast.error(error.response.data.message);
 			}
-		}
-
-		if (method === "online") {
+		} else if (method === "online") {
 			const stripePromise = loadStripe(
 				"pk_test_51TR8U01FdnIpgMFDC4ECc13ZNbPFJCZypLrAEaoGfND2AhyEhOpa3OHs2HnAgU55AnbONUOckD1qeSr9eqJf9JAi00bOMv8ice",
 			);

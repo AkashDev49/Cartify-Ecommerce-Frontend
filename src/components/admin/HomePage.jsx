@@ -14,6 +14,7 @@ import { Button } from "../ui/button";
 import {
 	Dialog,
 	DialogContent,
+	DialogDescription,
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
@@ -115,6 +116,9 @@ function HomePage() {
 					<DialogContent>
 						<DialogHeader>
 							<DialogTitle>Add new product </DialogTitle>
+							<DialogDescription>
+								Add your product details here
+							</DialogDescription>
 						</DialogHeader>
 
 						<form onSubmit={submitHandle} className="space-y-4">

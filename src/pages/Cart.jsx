@@ -33,7 +33,7 @@ function Cart() {
 						{cart.map((item) => (
 							<div
 								className="flex flex-col sm:flex-row items-center sm:items-stretch space-y-4 sm:space-y-0 sm:space-x-4 shadow-md p-4 rounded-lg border border-gray-400"
-								key={item.id}
+								key={item._id}
 							>
 								<img
 									src={item.product.images[0].url}
