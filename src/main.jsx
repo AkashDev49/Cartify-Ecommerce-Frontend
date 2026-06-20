@@ -22,7 +22,7 @@ createRoot(document.getElementById("root")).render(
 	</BrowserRouter>,
 );
 
-export const server = "http://localhost:5000";
+export const server = "https://cartify-ecommerce-sjdh.onrender.com";
 
 export const categories = [
 	"Electronics",
