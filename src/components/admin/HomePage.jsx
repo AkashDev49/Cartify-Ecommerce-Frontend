@@ -20,7 +20,8 @@ import {
 	DialogTrigger,
 } from "../ui/dialog";
 import { Input } from "../ui/input";
-import { categories, server } from "@/main";
+import { categories } from "@/main";
+import { server } from "../../config.js";
 import toast from "react-hot-toast";
 import axios from "axios";
 import Cookies from "js-cookie";
