@@ -9,7 +9,7 @@ import {
 	DialogTitle,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { server } from "@/main";
+import { server } from "../config.js";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { Trash } from "lucide-react";

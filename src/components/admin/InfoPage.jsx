@@ -1,4 +1,4 @@
-import { server } from "@/main";
+import { server } from "../config.js";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
@@ -22,8 +22,6 @@ import {
 	YAxis,
 	BarChart,
 } from "recharts";
-import { Userdata } from "@/context/UserContext";
-import Order from "@/pages/Order";
 
 function InfoPage() {
 	const [cod, setCod] = useState(0);

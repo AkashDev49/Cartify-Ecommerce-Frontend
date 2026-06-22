@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Cookies from "js-cookie";
-import { server } from "@/main";
+import { server } from "../config.js";
 import Loading from "@/components/Loading";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";

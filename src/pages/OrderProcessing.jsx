@@ -1,5 +1,5 @@
 import { CartData } from "@/context/CartContext";
-import { server } from "@/main";
+import { server } from "../config.js";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
